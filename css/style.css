@@ -6,13 +6,21 @@
 }
 
 .hero-section {
-    background: url('../images/borehole.jpg') no-repeat center center;
+    background: url('../images/sheep.jpg') no-repeat center center;
     background-size: cover;
     height: 100vh; /* Full viewport height */
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+.hero-section .col-md-8 {
+    background: rgba(0, 0, 0, 0.5); /* Black with 50% transparency */
+    padding: 20px;
+    border-radius: 10px; /* Optional: adds rounded corners */
+    display: inline-block; /* Ensures it wraps around the content */
+}
+
 
 .text-bro {
     color: #4b1500;
@@ -72,4 +80,183 @@
     padding-top: 10px;
     margin-bottom: 20px;
   }
-  
+
+.footer-logo {
+    max-width: 120px; /* Adjust logo size */
+    display: block;
+    margin: 0 auto; /* Center the logo */
+}
+
+.footer-link {
+    text-decoration: none;
+    color: #ffffff;
+    display: inline-block;
+    margin-bottom: 8px;
+}
+
+.footer-link:hover {
+    color: #f8b400;
+}
+
+/* Donation Section Styling */
+.donation-section {
+  background: url('../images/zaka.jpg') no-repeat center center/cover;
+  position: relative;
+  color: white;
+}
+
+.donation-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay for readability */
+}
+
+.donation-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+.donation-details h5 {
+  color: #ffcc00;
+  margin-bottom: 5px;
+}
+
+.donation-details {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center; /* Ensures all text inside is center-aligned */
+}
+
+.d-flex {
+  flex-direction: column; /* Stack icon and text vertically */
+  align-items: center; /* Center align items */
+  text-align: center;
+}
+
+.d-flex i {
+  font-size: 2rem; /* Adjust icon size */
+  margin-bottom: 5px;
+}
+
+.contact-section {
+  background: url('../images/nature.jpg') no-repeat center center/cover;
+  padding: 80px 0;
+}
+
+.contact-form {
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  color: white;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.contact-form .btn {
+  background-color: #ffcc00;
+  border: none;
+  font-weight: bold;
+}
+
+.contact-form .btn:hover {
+  background-color: #e6b800;
+}
+
+.whatsapp-button {
+  display: inline-block;
+  background-color: #25D366;
+  color: white;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.social-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.social-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.social-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.social-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.whatsapp {
+  background-color: #25D366;
+}
+
+.whatsapp:hover {
+  background-color: #1EBE5D;
+  transform: scale(1.05);
+}
+
+.instagram {
+  background-color: #E4405F;
+}
+
+.instagram:hover {
+  background-color: #D73852;
+  transform: scale(1.05);
+}
+
+.tiktok {
+  background-color: #000;
+}
+
+.tiktok:hover {
+  background-color: #1C1C1C;
+  transform: scale(1.05);
+}
+
+.social-button i {
+  font-size: 20px;
+}

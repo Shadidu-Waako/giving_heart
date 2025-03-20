@@ -3,58 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Donate - Muslim Charity Organization</title>
+    <title>Giving Heart Charity Organization</title>
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg" style="background-color: #f9f9ed;">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">CharityOrg</a>
+            <a class="navbar-brand d-flex align-items-center nav-link" href="index.html">
+                <img src="images/logo2.png" alt="Giving Heart Charity Logo" class="me-2" style="height: 40px;">
+                Giving Heart Charity Organization
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="campaigns.html">Campaigns</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="donate.html">Donate</a></li>
-                    <li class="nav-item"><a class="nav-link" href="volunteer.html">Volunteer</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="causes.html">Causes</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="donate.html">Donate</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Donate Section -->
-    <div class="container py-5">
-        <h1>Make a Donation</h1>
-        <p>Your contribution helps us provide aid to those in need. Choose your preferred donation method below:</p>
-        <form>
-            <div class="mb-3">
-                <label for="donationAmount" class="form-label">Donation Amount</label>
-                <input type="number" class="form-control" id="donationAmount" placeholder="Enter amount in USD">
+    <!-- Donation Details Section -->
+    <div class="container-fluid donation-section py-5">
+        <div class="container text-white text-center">
+            <h2 class="mb-4">Donate to Support Our Cause</h2>
+            <p class="lead">Your generosity can make a difference in the lives of many.</p>
+
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="donation-details p-4 rounded">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="bi bi-bank fs-3 me-3 text-warning"></i>
+                            <div>
+                                <h5 class="mb-1">Bank Name</h5>
+                                <p class="mb-0">EQUITY BANK UGANDA LIMITED</p>
+                            </div>
+                        </div>
+                    
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="bi bi-person-circle fs-3 me-3 text-warning"></i>
+                            <div>
+                                <h5 class="mb-1">Account Name</h5>
+                                <p class="mb-0">GIVING HEART MUSLIM FOUNDATION</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="bi bi-card-list fs-3 me-3 text-warning"></i>
+                            <div>
+                                <h5 class="mb-1">Account Number</h5>
+                                <p class="mb-0">1014200000000</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="bi bi-globe fs-3 me-3 text-warning"></i>
+                            <div>
+                                <h5 class="mb-1">SWIFT Code</h5>
+                                <p class="mb-0">EQBLUGKA</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="bi bi-geo-alt fs-3 me-3 text-warning"></i>
+                            <div>
+                                <h5 class="mb-1">Location</h5>
+                                <p class="mb-0">MBALE CITY, REPUBLIC STREET</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="mb-3">
-                <label for="donationType" class="form-label">Donation Type</label>
-                <select class="form-select" id="donationType">
-                    <option selected>Zakat</option>
-                    <option>Sadaqah</option>
-                    <option>General Donation</option>
-                </select>
-            </div>
-            <button type="submit" class="btn btn-primary">Donate Now</button>
-        </form>
+        </div>
     </div>
 
+
+    <!-- Footer -->
     <footer class="bg-dark text-light py-4">
         <div class="container text-center">
-            <p>&copy; 2025 CharityOrg. All Rights Reserved.</p>
+            <div class="row">
+                <!-- Logo and About -->
+                <div class="col-md-4">
+                    <img src="images/logo2.png" alt="Giving Heart Logo" class="footer-logo">
+                    <h5 class="mt-2"><b>GIVING HEART</b></h5>
+                    <p>MUSLIM FOUNDATION</p>
+                </div>
+
+                <!-- Important Links -->
+                <div class="col-md-4">
+                    <h5><b>Important Links</b></h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="footer-link">Home</a></li>
+                        <li><a href="about.html" class="footer-link">About</a></li>
+                        <li><a href="causes.html" class="footer-link">Causes</a></li>
+                        <li><a href="gallery.html" class="footer-link">Gallery</a></li>
+                        <li><a href="contact.html" class="footer-link">Contact</a></li>
+                        <li><a href="donate.html" class="footer-link">Donate</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Us -->
+                <div class="col-md-4">
+                    <h5><b>Contact Us</b></h5>
+                    <ul class="list-unstyled">
+                        <li>Email: <a href="mailto:givingheartmuslimfoundation@gmail.com" class="footer-link">givingheartmuslimfoundation@gmail.com</a></li>
+                        <li>Phone: <a href="tel:+1234567890" class="footer-link">+256 746 513561</a></li>
+                        <li>Location: Kadama, Uganda</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="bg-light">
+            <p>&copy; 2025 Giving Heart Charity Organization. All Rights Reserved.</p>
         </div>
     </footer>
 
+
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
