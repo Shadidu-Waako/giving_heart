@@ -5,6 +5,12 @@
     color: #7d2e00 !important; /* Optional: Changes color on hover */
 }
 
+.custom-footer {
+  background-color: #f9f9ed;
+  color: #4b1500;
+}
+
+
 /* Hero Section */
 .hero-section {
   background: url('../images/sheep.jpg') no-repeat center center;
@@ -128,7 +134,7 @@
 
 .footer-link {
     text-decoration: none;
-    color: #ffffff;
+    color: #4b1500;
     display: inline-block;
     margin-bottom: 8px;
 }
