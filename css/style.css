@@ -257,6 +257,15 @@
   transform: scale(1.05);
 }
 
+.facebook {
+  background-color: #006eff;
+}
+
+.facebook:hover {
+  background-color: #07239e;
+  transform: scale(1.05);
+}
+
 .social-button i {
   font-size: 20px;
 }
