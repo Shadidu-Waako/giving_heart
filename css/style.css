@@ -260,3 +260,19 @@
 .social-button i {
   font-size: 20px;
 }
+
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px; /* Adjust max-width as needed */
+  margin: auto;
+  overflow: hidden;
+  border-radius: 10px; /* Optional: rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: shadow effect */
+}
+
+.video-container video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
