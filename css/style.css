@@ -5,21 +5,60 @@
     color: #7d2e00 !important; /* Optional: Changes color on hover */
 }
 
+/* Hero Section */
 .hero-section {
-    background: url('../images/sheep.jpg') no-repeat center center;
-    background-size: cover;
-    height: 100vh; /* Full viewport height */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background: url('../images/sheep.jpg') no-repeat center center;
+  background-size: cover;
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 20px; /* Ensures no content overflows */
 }
 
-.hero-section .col-md-8 {
-    background: rgba(0, 0, 0, 0.5); /* Black with 50% transparency */
-    padding: 20px;
-    border-radius: 10px; /* Optional: adds rounded corners */
-    display: inline-block; /* Ensures it wraps around the content */
+/* Background overlay for better readability */
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  z-index: 1;
 }
+
+/* Ensuring text does not overflow */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.6); /* Slightly darker overlay */
+  padding: 30px;
+  border-radius: 10px;
+  width: 90%; /* Ensures responsiveness */
+  max-width: 800px; /* Prevents it from getting too wide */
+  text-align: center;
+}
+
+/* Adjusting heading and text sizes for responsiveness */
+.hero-text {
+  font-size: 2rem; /* Adjusted size for better fit */
+  font-weight: bold;
+  padding: 10px 20px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .hero-text {
+      font-size: 1.5rem; /* Reduce size on mobile */
+  }
+
+  .hero-content {
+      width: 95%; /* Allows content to fit well on small screens */
+  }
+}
+
 
 
 .text-bro {
